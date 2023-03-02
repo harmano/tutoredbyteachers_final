@@ -27,7 +27,15 @@
     <link rel="stylesheet" href="assets/css/spacing.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S1LCLQ0SMP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'G-S1LCLQ0SMP');
+    </script>
 </head>
 
 <body>
@@ -1071,7 +1079,8 @@
                         </div>
                        
                         <div>
-                            <form  name="myForm" class="needs-validation wow fadeInUp2 animated" method="POST">
+                            <form  name="myForm" class="needs-validation wow fadeInUp2 animated" action="https://formspree.io/f/mleknnvo"
+                            method="POST">
                                 <p id="error-msg"></p>
                                 <div id="simple-msg"></div>
                                 <div class="row">
@@ -1096,7 +1105,7 @@
                                     <div class="col-lg-6 col-md-6">
                                         <div class="mb-2 decoration">
                                             <label for="validationCustom03" class="p-text-legal form-label">Phone</label>
-                                            <input name="phone" id="validationCustom03" pattern="[0-9]{10}" type="phone" class="form-control" placeholder="" required>
+                                            <input name="Phone" id="validationCustom03" pattern="[0-9]{10}" type="tel" class="form-control" placeholder="" required>
                                             <div class=" invalid-feedback">
                                                 Enter valid number Format: 123-456-7890
                                               </div>
@@ -1105,10 +1114,8 @@
                                     <div class="col-lg-6 col-md-6">
                                         <div class="mb-2 decoration " >
                                             <label for="validationCustom03" class="p-text-legal form-label">Choose Subjects</label>
-                                            <input name="program" id="validationCustom03" pattern="[0-9]{10}" type="text" class="form-control" placeholder="" required>
-                                            <div class=" invalid-feedback">
-                                                Please select program
-                                              </div>
+                                            <input name="program" id="validationCustom03" type="text" class="form-control" placeholder="" required>
+                                         
                                         </div>
                                        
                                     </div>
@@ -1116,7 +1123,7 @@
                                         <div class="mb-2 decoration " >
 
                                             <div  class="widget__select2 ">
-                                                <select name="select-cat" id="select">
+                                                <select name="Program" id="select">
                                                     <option value="">Choose Program</option>
                                                     <option value="">One-on-one tutoring</option>
                                                     <option value="">Group tutoring</option>
@@ -1131,7 +1138,7 @@
                                         <div class="mb-2 decoration " >
 
                                             <div  class="widget__select2 ">
-                                                <select name="select-cat" id="select">
+                                                <select name="Grade" id="select">
                                                     <option value="">Choose Grade</option>
                                                     <option value="">K</option>
                                                     <option value="">1-4</option>
@@ -1156,7 +1163,7 @@
                                                   </div>
                                             </div>
                                         </div>
-                                        <button class="theme_btn message_btn formbtn mt-20">Send Message</button>
+                                        <button class="theme_btn message_btn formbtn mt-20" type="submit">Send Message</button>
                                         
                                     </div>
                                     
