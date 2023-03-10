@@ -1220,6 +1220,7 @@ section.page-title-area {
   min-height: 200px;
   position: relative;
   z-index: 1;
+  margin-top: 120px;
 }
 
 .page-title-wrapper {
@@ -7058,6 +7059,16 @@ background: linear-gradient(180deg, rgba(0,157,255,0.3617822128851541) 0%, rgba(
   color: #29C5F6;
 }
 
+.blog-details-title-2 {
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .blog-details-title-2 {
+    font-size: 15px;
+  }
+}
+
 .blog-details-title {
   font-size: 30px;
 }
@@ -7424,9 +7435,9 @@ background: linear-gradient(180deg, rgba(0,157,255,0.3617822128851541) 0%, rgba(
 .blog-recent-post li {
   padding: 10px 12px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
-  max-width: 50%;
+      -ms-flex: 0 0 80%;
+          flex: 0 0 80%;
+  max-width: 80%;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -8641,7 +8652,7 @@ box-shadow: 0px 19px 31px -1px rgba(0,0,0,0.22);
 }
 
 .fot-list a:hover {
-  color: #406EFF;
+  color: black;
 }
 
 .copy-right-area.border-bot {
